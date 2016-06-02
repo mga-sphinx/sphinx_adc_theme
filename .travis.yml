@@ -1,0 +1,25 @@
+language: python
+sudo: false
+cache:
+  directories:
+    - $HOME/.cache/pip
+python:
+  - "2.6"
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev"
+env:
+  global:
+    - TEST=-v
+  matrix:
+    - DOCUTILS=0.11
+    - DOCUTILS=0.12
+install:
+  - pip install -U pip
+  - pip install docutils==$DOCUTILS
+  - pip install -r requirements.txt
+script:
+
+  - make -C demo_docs html
