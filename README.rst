@@ -12,6 +12,9 @@
 Apple Developer Connection Sphinx Theme
 ***************************************
 
+.. image:: https://travis-ci.org/mga-sphinx/sphinx_adc_theme.svg?branch=master
+    :target: https://travis-ci.org/mga-sphinx/sphinx_adc_theme
+
 .. contents:: 
 
 This is a sphinx_ theme that made for adc_.
