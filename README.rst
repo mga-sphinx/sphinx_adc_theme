@@ -56,8 +56,16 @@ conf.py file:
 Changelog
 =========
 
-v0.1.0
-------
+0.1.2
+-----
+
+* Fix broken package on pypi
+
+0.1.1
+-----
+
+* Fix Image path in CSS Broken
+* Fix TOC.js nevers load
 
 
 Contributing or modifying the theme
