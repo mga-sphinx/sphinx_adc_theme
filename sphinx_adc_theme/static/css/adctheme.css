@@ -77,7 +77,7 @@ li#toc_button .headerButton a {
     float: left;
     padding-left:15px;
     border-right:1px solid #ACACAC;
-    background:transparent url(triangle_open.png) no-repeat scroll 4px 6px;
+    background:transparent url(../img/triangle_open.png) no-repeat scroll 4px 6px;
 }
 
 li#toc_button .headerButton a:hover {
