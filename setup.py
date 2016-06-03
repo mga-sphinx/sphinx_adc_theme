@@ -18,6 +18,7 @@ setup(
     description='Apple Developer Connection theme for Sphinx, 2015 version.',
     long_description=open('README.rst').read(),
     zip_safe=False,
+    keywords = 'sphinx theme',
     packages=['sphinx_adc_theme'],
     package_data={'sphinx_adc_theme': [
         'theme.conf',
