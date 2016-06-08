@@ -56,6 +56,11 @@ conf.py file:
 Changelog
 =========
 
+0.1.3
+-----
+
+* Fix css validation
+
 0.1.2
 -----
 
