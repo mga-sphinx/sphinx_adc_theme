@@ -5,7 +5,7 @@ Fork From https://github.com/coordt/ADCtheme/.
 """
 import os
 
-VERSION = (0, 1, 3)
+VERSION = (0, 1, 4)
 
 __version__ = ".".join(str(v) for v in VERSION)
 __version_full__ = __version__
@@ -14,3 +14,7 @@ __version_full__ = __version__
 def get_html_theme_path():
     """Return list of HTML theme paths."""
     return os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+def get_theme_version():
+    """Return the theme version"""
+    return __version__
