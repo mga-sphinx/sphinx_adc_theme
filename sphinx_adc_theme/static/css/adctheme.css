@@ -228,7 +228,7 @@ input.searchbutton {
 }
 .search-wrapper {width: 100%; height: 25px;}
 .search-wrapper input.prettysearch { border: none; width:200px; height: 16px; background: url(../img/searchfield_repeat.png) center top repeat-x; border: 0px; margin: 0; padding: 3px 0 0 0; font: 11px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; }
-.search-wrapper input.prettysearch { width: 184px; margin-left: 20px; margin-top:-1px; margin-right:-2px; margin-left:10px; }
+.search-wrapper input.prettysearch { width: 184px; margin-left: 20px; margin-top: 0px; margin-right:-2px; margin-left:10px; padding-left: 10px }
 .search-wrapper input.search-left { display: block; position: absolute; width: 20px; height: 19px; background: url(../img/searchfield_leftcap.png) left top no-repeat; cursor: pointer; }
 .search-wrapper .search-right { display: block; position: relative; left: 204px; top: -19px; width: 10px; height: 19px; background: url(../img/searchfield_rightcap.png) right top no-repeat; }
 
