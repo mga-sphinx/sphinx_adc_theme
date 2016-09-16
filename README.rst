@@ -56,6 +56,12 @@ conf.py file:
 Changelog
 =========
 
+0.1.4
+-----
+
+* Fix search widget apparence
+* Add version theme in context
+
 0.1.3
 -----
 

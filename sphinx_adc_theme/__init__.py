@@ -18,3 +18,11 @@ def get_html_theme_path():
 def get_theme_version():
     """Return the theme version"""
     return __version__
+
+def update_context(app, pagename, templatename, context, doctree):
+    context['adc_theme_version'] = __version__
+
+def setup(app):
+    app.connect('html-page-context', update_context)
+    return {'version': __version__,
+            'parallel_read_safe': True}
