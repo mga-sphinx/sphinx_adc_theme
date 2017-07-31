@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx_adc_theme',
 ]
 
 # Math
@@ -139,6 +140,7 @@ html_theme = 'sphinx_adc_theme'
 html_theme_options = {
     'github_user': 'mga-sphinx',
     'github_repo': 'sphinx_adc_theme',
+    'base_url': 'http://mga-sphinx.github.io/sphinx_adc_theme',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

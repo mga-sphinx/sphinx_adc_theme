@@ -12,6 +12,14 @@ __version__ = ".".join(str(v) for v in VERSION)
 __version_full__ = __version__
 
 
+def setup(app):
+    app.connect('html-page-context', update_context)
+    app.connect('html-page-context', add_html_link)
+    app.connect('build-finished', create_sitemap)
+    app.sitemap_links = []
+    return {'version': __version__,
+            'parallel_read_safe': True}
+
 def get_html_theme_path():
     """Return list of HTML theme paths."""
     return os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
@@ -22,14 +30,6 @@ def get_theme_version():
 
 def update_context(app, pagename, templatename, context, doctree):
     context['adc_theme_version'] = __version__
-
-def setup(app):
-    app.connect('html-page-context', update_context)
-    app.connect('html-page-context', add_html_link)
-    app.connect('build-finished', create_sitemap)
-    app.sitemap_links = []
-    return {'version': __version__,
-            'parallel_read_safe': True}
 
 def add_html_link(app, pagename, templatename, context, doctree):
     """As each page is built, collect page names for the sitemap"""
