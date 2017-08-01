@@ -140,7 +140,12 @@ html_theme = 'sphinx_adc_theme'
 html_theme_options = {
     'github_user': 'mga-sphinx',
     'github_repo': 'sphinx_adc_theme',
+    'github_button': 'true',
+    # Use to geenrate sitemap.xml
     'base_url': 'http://mga-sphinx.github.io/sphinx_adc_theme/',
+    # Add allow / in robots.txt
+    # Use private if you want to Disallow /
+    'robots_txt': 'public',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

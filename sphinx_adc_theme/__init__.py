@@ -16,6 +16,7 @@ def setup(app):
     app.connect('html-page-context', update_context)
     app.connect('html-page-context', add_html_link)
     app.connect('build-finished', create_sitemap)
+    app.connect('build-finished', create_robots_txt)
     app.sitemap_links = []
     return {'version': __version__,
             'parallel_read_safe': True}
@@ -55,3 +56,25 @@ def create_sitemap(app, exception):
         ET.SubElement(url, "loc").text = link
 
     ET.ElementTree(root).write(filename)
+
+def create_robots_txt(app, exception):
+    """
+    Create a robots.txt at the root path, for search engine
+    """
+    filename = app.outdir + "/robots.txt"
+    print("Generating robots.txt in %s" % filename)
+
+    content = []
+    content.append("User-agent: *")
+    print(app.config['html_theme_options'].get('robots_txt', ''))
+    if app.config['html_theme_options'].get('robots_txt', 'public') != 'public':
+        content.append("Disallow: /")
+    else:
+        content.append("Allow: /")
+
+    base_url = app.config['html_theme_options'].get('base_url', '')
+    if base_url:
+        content.append("\nSitemap: " + base_url + "sitemap.xml")
+
+    with open(filename, 'w') as f:
+        f.write('\n'.join(content))
