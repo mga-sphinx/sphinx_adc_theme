@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx_adc_theme',
 ]
 
 # Math
@@ -136,7 +137,16 @@ html_theme = 'sphinx_adc_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {}
+html_theme_options = {
+    'github_user': 'mga-sphinx',
+    'github_repo': 'sphinx_adc_theme',
+    'github_button': 'true',
+    # Use to geenrate sitemap.xml
+    'base_url': 'http://mga-sphinx.github.io/sphinx_adc_theme/',
+    # Add allow / in robots.txt
+    # Use private if you want to Disallow /
+    'robots_txt': 'public',
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ["../.."]
@@ -185,7 +195,11 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 #
-# html_sidebars = {}
+html_sidebars = {
+    '**': [
+        'about.html',
+    ]
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
