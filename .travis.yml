@@ -18,6 +18,7 @@ env:
     - DOCUTILS=0.11
     - DOCUTILS=0.12
     - DOCUTILS=0.13.1
+    - DOCUTILS=0.14
 
 matrix:
   exclude:
