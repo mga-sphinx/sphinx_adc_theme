@@ -15,7 +15,6 @@ env:
   global:
     - TEST=-v
   matrix:
-    - DOCUTILS=0.11
     - DOCUTILS=0.12
     - DOCUTILS=0.13.1
     - DOCUTILS=0.14
@@ -23,23 +22,13 @@ env:
 matrix:
   exclude:
     - python: "3.4"
-      env: DOCUTILS=0.11
-    - python: "3.4"
       env: DOCUTILS=0.12
-    - python: "3.5"
-      env: DOCUTILS=0.11
     - python: "3.5"
       env: DOCUTILS=0.12
     - python: "3.6"
-      env: DOCUTILS=0.11
-    - python: "3.6"
       env: DOCUTILS=0.12
     - python: nightly
-      env: DOCUTILS=0.11
-    - python: nightly
       env: DOCUTILS=0.12
-    - python: pypy
-      env: DOCUTILS=0.11
     - python: pypy
       env: DOCUTILS=0.12
 
