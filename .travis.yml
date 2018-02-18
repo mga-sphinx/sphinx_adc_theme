@@ -38,4 +38,4 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - make -C demo_docs html
+  - make -C demo html
