@@ -39,3 +39,12 @@ install:
 
 script:
   - make -C demo html
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: demo/build/html/
+  on:
+    branch: master
+    python: 3.5
