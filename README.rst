@@ -19,6 +19,8 @@ Apple Developer Connection Sphinx Theme
 
 This is a sphinx_ theme that made for adc_.
 
+Check demo_
+
 Installation
 ============
 
