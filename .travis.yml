@@ -38,7 +38,7 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - make -C demo html
+  - make -C demo html SPHINXOPTS="-D html_theme=sphinx_adc_theme"
 
 deploy:
   provider: pages
