@@ -1,3 +1,0 @@
-[submodule "demo_docs"]
-	path = demo_docs
-	url = https://github.com/mga-sphinx/sphinx_demo_data.git
