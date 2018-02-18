@@ -56,6 +56,11 @@ conf.py file:
 Changelog
 =========
 
+Current
+-------
+
+* Move demo doc as `separate repository <https://github.com/mga-sphinx/sphinx_demo_data>`_
+
 0.1.4
 -----
 
