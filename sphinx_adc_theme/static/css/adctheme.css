@@ -407,6 +407,7 @@ table.docutils {
     padding:8px;
     text-align:left;
     vertical-align:top;
+    width: 100%;
 }
 
 table.docutils td, table.docutils th {
