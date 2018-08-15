@@ -136,6 +136,10 @@ div.sphinxsidebarwrapper {
     padding: 10px 5px 0 10px;
 }
 
+div.sphinxsidebarwrapper p.caption {
+    display: none;
+}
+
 #sphinxsidebar li {
     margin: 0px;
     padding: 0px;
@@ -315,6 +319,11 @@ div.body td {
     text-align: left;
 }
 
+div.body td.linenos {
+    text-align: left;
+    width: 25px;
+}
+
 .field-list ul {
     padding-left: 1em;
 }
@@ -366,9 +375,9 @@ p.topic-title {
     text-align: left;
 }
 .warning {
-    background-color:#E8E8E8;
-    border:1px solid #111111;
-    margin:30px;
+    background-color: #E8E8E8;
+    border: 1px solid #111111;
+    margin: 20px;
 }
 .admonition p { 
     font: 12px 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;
@@ -421,6 +430,14 @@ table.docutils td, table.docutils th {
 table.docutils th {
     font-weight: bold;
 }
+
+table.docutils.field-list {
+    border-top: unset;
+    border-bottom: unset;
+    border-left: unset;
+    border-right: unset;
+}
+
 /* This alternates colors in up to six table rows (light blue for odd, white for even)*/      
 .docutils tr {
         background: #F0F5F9;
@@ -457,6 +474,12 @@ table.footnote td, table.footnote th {
 th {
     text-align: left;
     padding-right: 5px;
+}
+
+/* -- image position -------------------------------------------------------- */
+div.figure.align-center {
+    vertical-align: middle;
+    text-align: center;
 }
 
 /* -- other body styles ----------------------------------------------------- */
@@ -580,6 +603,15 @@ tt.xref, a tt {
 
 h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
     background-color: transparent;
+}
+
+/* -- module autodoc -------------------------------------------------------- */
+div.section dl.class {
+    padding-bottom: 5px;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    padding-left: 5px;
 }
 
 /* -- math display ---------------------------------------------------------- */
