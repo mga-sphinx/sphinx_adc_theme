@@ -371,9 +371,9 @@ p.topic-title {
     text-align: left;
 }
 .warning {
-    background-color:#E8E8E8;
-    border:1px solid #111111;
-    margin:30px;
+    background-color: #E8E8E8;
+    border: 1px solid #111111;
+    margin: 20px;
 }
 .admonition p { 
     font: 12px 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;
