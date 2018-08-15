@@ -464,6 +464,12 @@ th {
     padding-right: 5px;
 }
 
+/* -- image position -------------------------------------------------------- */
+div.figure.align-center {
+    vertical-align: middle;
+    text-align: center;
+}
+
 /* -- other body styles ----------------------------------------------------- */
 
 dl {
