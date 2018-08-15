@@ -136,6 +136,10 @@ div.sphinxsidebarwrapper {
     padding: 10px 5px 0 10px;
 }
 
+div.sphinxsidebarwrapper p.caption {
+    display: none;
+}
+
 #sphinxsidebar li {
     margin: 0px;
     padding: 0px;
