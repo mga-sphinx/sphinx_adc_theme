@@ -430,6 +430,14 @@ table.docutils td, table.docutils th {
 table.docutils th {
     font-weight: bold;
 }
+
+table.docutils.field-list {
+    border-top: unset;
+    border-bottom: unset;
+    border-left: unset;
+    border-right: unset;
+}
+
 /* This alternates colors in up to six table rows (light blue for odd, white for even)*/      
 .docutils tr {
         background: #F0F5F9;
@@ -595,6 +603,15 @@ tt.xref, a tt {
 
 h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
     background-color: transparent;
+}
+
+/* -- module autodoc -------------------------------------------------------- */
+div.section dl.class {
+    padding-bottom: 5px;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    padding-left: 5px;
 }
 
 /* -- math display ---------------------------------------------------------- */
