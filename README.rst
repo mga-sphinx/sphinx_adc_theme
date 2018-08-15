@@ -61,7 +61,13 @@ Changelog
 Current
 -------
 
+None
+
+0.1.5
+-----
+
 * Move demo doc as `separate repository <https://github.com/mga-sphinx/sphinx_demo_data>`_
+* Better display for some docutils element
 
 0.1.4
 -----

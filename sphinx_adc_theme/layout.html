@@ -6,6 +6,7 @@
 {%- set reldelim1 = reldelim1 is not defined and ' &raquo;' or reldelim1 %}
 {%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
 {%- block linktags %}
+    <meta name="generator" content="Sphinx/ADC Theme by Mirounga www.mirounga.fr"/>
     {%- if hasdoc('about') %}
     <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
     {%- endif %}
