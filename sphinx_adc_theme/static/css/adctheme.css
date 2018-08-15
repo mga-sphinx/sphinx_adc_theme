@@ -315,6 +315,11 @@ div.body td {
     text-align: left;
 }
 
+div.body td.linenos {
+    text-align: left;
+    width: 25px;
+}
+
 .field-list ul {
     padding-left: 1em;
 }
