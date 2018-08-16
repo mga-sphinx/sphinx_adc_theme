@@ -1,2 +1,2 @@
 -e requirements.txt
-sphinx-autobuild
+sphinx-autobuild==0.7.1
