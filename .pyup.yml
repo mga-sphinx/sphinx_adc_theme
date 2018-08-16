@@ -1,0 +1,11 @@
+branch: master
+
+requirements:
+    - requirements-dev.txt:
+        pin: True
+    - requirements.txt:
+        pin: True
+
+assignees: kryskool
+branch_prefix: pyup/
+label_prs: update
