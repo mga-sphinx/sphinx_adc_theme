@@ -20,16 +20,18 @@ setup(
     zip_safe=False,
     keywords = 'sphinx theme',
     packages=['sphinx_adc_theme'],
-    package_data={'sphinx_adc_theme': [
-        'theme.conf',
-        '*.html',
-        'static/css/*.css',
-        'static/js/*.js',
-        'static/img/*.*'
-    ]},
+    package_data={
+        'sphinx_adc_theme': [
+            'theme.conf',
+            '*.html',
+            'static/css/*.css',
+            'static/js/*.js',
+            'static/img/*.*'
+        ]
+    },
     include_package_data=True,
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 3 - Beta',
         'License :: OSI Approved :: BSD License',
         'Environment :: Console',
         'Environment :: Web Environment',
