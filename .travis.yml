@@ -3,34 +3,23 @@ sudo: false
 cache:
   directories:
     - $HOME/.cache/pip
-python:
-  - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "nightly"
-  - "pypy"
-
+    
 env:
   global:
     - TEST=-v
   matrix:
-    - DOCUTILS=0.12
-    - DOCUTILS=0.13.1
     - DOCUTILS=0.14
 
 matrix:
-  exclude:
-    - python: "3.4"
-      env: DOCUTILS=0.12
-    - python: "3.5"
-      env: DOCUTILS=0.12
-    - python: "3.6"
-      env: DOCUTILS=0.12
-    - python: nightly
-      env: DOCUTILS=0.12
+  include:
+    - python: 2.7
+    - python: 3.4
+    - python: 3.5
+    - python: 3.6
+    - python: 3.7
+      dist: xenial
+      sudo: true
     - python: pypy
-      env: DOCUTILS=0.12
 
 install:
   - pip install -U pip
