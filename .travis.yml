@@ -3,14 +3,7 @@ sudo: false
 cache:
   directories:
     - $HOME/.cache/pip
-python:
-  - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "nightly"
-  - "pypy"
-
+    
 env:
   global:
     - TEST=-v
@@ -20,6 +13,14 @@ env:
     - DOCUTILS=0.14
 
 matrix:
+  include:
+    - python: 2.7
+    - python: 3.4
+    - python: 3.5
+    - python: 3.6
+    - python: 3.7
+      dist: xenial
+      sudo: true
   exclude:
     - python: "3.4"
       env: DOCUTILS=0.12
