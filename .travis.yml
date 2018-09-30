@@ -41,11 +41,11 @@ deploy:
   - provider: pypi
     user: $PYPI_USER
     password: $PYPI_PASS
-    server: https://test.pypi.org/legacy/
     skip_cleanup: true
     distributions: "sdist bdist_wheel"
     on:
+      tags: true
       python: 3.6
-      all_branches: true
+      branch: master
 
 
