@@ -31,7 +31,7 @@ setup(
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
     classifiers=[
-        'Development Status :: 3 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: BSD License',
         'Environment :: Console',
         'Environment :: Web Environment',
