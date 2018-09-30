@@ -31,10 +31,21 @@ script:
   - make -C demo html SPHINXOPTS="-D html_theme=sphinx_adc_theme"
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: demo/build/html/
-  on:
-    branch: master
-    python: 3.5
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    local_dir: demo/build/html/
+    on:
+      branch: master
+      python: 3.5
+  - provider: pypi
+    user: $PYPI_USER
+    password: $PYPI_PASS
+    skip_cleanup: true
+    distributions: "sdist bdist_wheel"
+    on:
+      tags: true
+      python: 3.6
+      branch: master
+
+
