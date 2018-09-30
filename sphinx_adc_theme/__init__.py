@@ -4,12 +4,16 @@ Fork From https://github.com/coordt/ADCtheme/.
 
 """
 import os
+from pkg_resources import get_distribution, DistributionNotFound
 
-VERSION = (0, 1, 5)
-
-__version__ = ".".join(str(v) for v in VERSION)
-__version_full__ = __version__
-
+try:
+    release = get_distribution('sphinx_adc_theme').version
+    __version__ = '.'.join(release.split('.')[:2])
+    __version_full__ = release  # Keep for old compatibility
+except DistributionNotFound:
+    # package is not installed
+    __version__ = None
+    __version_full__ = None
 
 def get_html_theme_path():
     """Return list of HTML theme paths."""
