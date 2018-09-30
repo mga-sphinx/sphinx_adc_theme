@@ -44,5 +44,7 @@ deploy:
     server: https://test.pypi.org/legacy/
     skip_cleanup: true
     distributions: "sdist bdist_wheel"
+    on:
+      python: 3.6
 
 
