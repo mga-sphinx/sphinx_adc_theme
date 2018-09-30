@@ -49,4 +49,9 @@ setup(
         'Topic :: Documentation',
         'Topic :: Software Development :: Documentation',
     ],
+    entry_points = {
+        'sphinx.html_themes': [
+            'sphinx_adc_theme = sphinx_adc_theme',
+        ]
+    },
 )
