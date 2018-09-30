@@ -25,6 +25,7 @@ install:
   - pip install -U pip
   - pip install docutils==$DOCUTILS
   - pip install -r requirements.txt
+  - pip install -e .
 
 script:
   - make -C demo html SPHINXOPTS="-D html_theme=sphinx_adc_theme"
