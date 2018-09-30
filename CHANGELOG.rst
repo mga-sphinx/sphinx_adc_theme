@@ -1,11 +1,12 @@
 Changelog
 =========
 
-Current
--------
+0.1.6
+-----
 
 * add sphinx.html_themes entrypoint
 * use setuptools_scm for version number
+* auto deploy on pypi
 
 0.1.5
 -----
