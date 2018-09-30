@@ -5,12 +5,10 @@
 
 """
 from setuptools import setup
-from sphinx_adc_theme import __version__
 
 
 setup(
     name='sphinx_adc_theme',
-    version=__version__,
     url='https://github.com/mga-sphinx/sphinx_adc_theme',
     license='BSD',
     author='Christophe CHAUVET',
@@ -18,7 +16,7 @@ setup(
     description='Apple Developer Connection theme for Sphinx, 2015 version.',
     long_description=open('README.rst').read(),
     zip_safe=False,
-    keywords = 'sphinx theme',
+    keywords='sphinx theme',
     packages=['sphinx_adc_theme'],
     package_data={
         'sphinx_adc_theme': [
@@ -30,6 +28,8 @@ setup(
         ]
     },
     include_package_data=True,
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     classifiers=[
         'Development Status :: 3 - Beta',
         'License :: OSI Approved :: BSD License',

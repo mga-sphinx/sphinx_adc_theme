@@ -5,6 +5,7 @@ Current
 -------
 
 * add sphinx.html_themes entrypoint
+* use setuptools_scm for version number
 
 0.1.5
 -----
