@@ -24,5 +24,6 @@ def update_context(app, pagename, templatename, context, doctree):
 
 def setup(app):
     app.connect('html-page-context', update_context)
+    app.add_html_theme('sphinx_adc_theme', get_html_theme_path())
     return {'version': __version__,
             'parallel_read_safe': True}

@@ -4,7 +4,7 @@ Changelog
 Current
 -------
 
-None
+* add sphinx.html_themes entrypoint
 
 0.1.5
 -----
@@ -33,4 +33,3 @@ None
 
 * Fix Image path in CSS Broken
 * Fix TOC.js nevers load
-
