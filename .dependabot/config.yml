@@ -2,5 +2,5 @@
 version: 1
 update_configs:
   - package_manager: "python"
-    directory: "/requirements.txt"
+    directory: "/"
     update_schedule: "daily"
