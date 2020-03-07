@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.1.7
+-----
+
+* update dependancies
+* update classifiers
+* add new metadata on setup.py for pypi
+* fix travis-ci config for dpl v2
+
 0.1.6
 -----
 
