@@ -1,4 +1,6 @@
 language: python
+os:
+  - linux
 
 cache:
   directories:
@@ -31,7 +33,7 @@ script:
 
 deploy:
   - provider: pages
-    skip_cleanup: true
+    cleanup: false
     token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     local_dir: demo/build/html/
     on:
@@ -40,7 +42,7 @@ deploy:
   - provider: pypi
     username: $PYPI_USER
     password: $PYPI_PASS
-    skip_cleanup: true
+    cleanup: false
     distributions: "sdist bdist_wheel"
     on:
       tags: true
