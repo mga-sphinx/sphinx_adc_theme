@@ -28,8 +28,15 @@ setup(
         ]
     },
     include_package_data=True,
+    install_requires=["docutils>=0.14"],
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
+      project_urls={
+        "Bug Tracker": "https://github.com/mga-sphinx/sphinx_adc_theme/issues",
+        "Documentation": "https://github.com/mga-sphinx/sphinx_adc_theme/blob/master/README.rst",
+        "Source Code": "https://github.com/mga-sphinx/sphinx_adc_theme",
+        "Demo": "http://mga-sphinx.github.io/sphinx_adc_theme/",
+    },  
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: BSD License',
