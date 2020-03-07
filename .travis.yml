@@ -10,7 +10,7 @@ env:
   global:
     - TEST=-v
   jobs:
-    - DOCUTILS=0.14
+    - DOCUTILS=0.16
 
 jobs:
   include:
