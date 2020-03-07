@@ -1,5 +1,5 @@
 language: python
-sudo: false
+
 cache:
   directories:
     - $HOME/.cache/pip
@@ -7,19 +7,17 @@ cache:
 env:
   global:
     - TEST=-v
-  matrix:
+  jobs:
     - DOCUTILS=0.14
 
-matrix:
+jobs:
   include:
     - python: 3.5
     - python: 3.6
     - python: 3.7
       dist: xenial
-      sudo: true
     - python: 3.8
       dist: xenial
-      sudo: true
     - python: pypy3
 
 install:
@@ -34,13 +32,13 @@ script:
 deploy:
   - provider: pages
     skip_cleanup: true
-    github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     local_dir: demo/build/html/
     on:
       branch: master
       python: 3.6
   - provider: pypi
-    user: $PYPI_USER
+    username: $PYPI_USER
     password: $PYPI_PASS
     skip_cleanup: true
     distributions: "sdist bdist_wheel"
