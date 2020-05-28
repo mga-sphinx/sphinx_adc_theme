@@ -490,7 +490,7 @@ dl {
 
 dd p {
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 dd ul, dd table {
@@ -502,6 +502,11 @@ dd {
     margin-bottom: 10px;
     margin-left: 30px;
     font-size: 12px;
+}
+
+dt {
+    font-size: 12px;
+    font-weight: bold;
 }
 
 dt:target, .highlight {
