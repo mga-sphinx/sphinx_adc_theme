@@ -1,2 +1,2 @@
 -e requirements.txt
-sphinx-autobuild==0.7.1
+sphinx-autobuild==2020.9.1
