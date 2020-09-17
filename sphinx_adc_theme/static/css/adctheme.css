@@ -488,9 +488,19 @@ dl {
     margin-bottom: 15px;
 }
 
+dl.field-list {
+    display: grid;
+    grid-template-columns: fit-content(30%) auto;
+}
+
+dl.field-list dt:after {
+    content: ":";
+    padding-left: 2px;
+}
+
 dd p {
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 dd ul, dd table {
@@ -501,7 +511,20 @@ dd {
     margin-top: 3px;
     margin-bottom: 10px;
     margin-left: 30px;
+    font-size: 14px;
+}
+
+dl.field-list dt {
+    font-weight: bold;
+    word-break: break-word;
+    padding-left: 0.5em;
+    padding-right: 5px;
+    margin-bottom: 2px;
+}
+
+dt {
     font-size: 12px;
+    font-weight: bold;
 }
 
 dt:target, .highlight {
