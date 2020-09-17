@@ -28,7 +28,7 @@ setup(
         ]
     },
     include_package_data=True,
-    install_requires=["docutils>=0.14"],
+    install_requires=["docutils>=0.14", "Sphinx"],
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
       project_urls={
