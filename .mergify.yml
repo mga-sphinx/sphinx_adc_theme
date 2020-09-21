@@ -2,7 +2,7 @@ pull_request_rules:
   - name: automatic merge for pyUp pull requests
     conditions:
       - author=pyup-bot
-      - status-success=Python application / build (3.7) (push)
+      - status-success=Python application / build (3.7)
       - label=update
     actions:
       merge:
@@ -11,7 +11,7 @@ pull_request_rules:
         strict_method: rebase
   - name: automatic merge on CI success and review
     conditions:
-      - status-success=Python application / build (3.7) (push)
+      - status-success=Python application / build (3.7)
       - "#approved-reviews-by>=1"
     actions:
       merge:
