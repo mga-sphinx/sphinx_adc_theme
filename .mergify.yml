@@ -8,6 +8,7 @@ pull_request_rules:
       - "#commented-reviews-by=0"
       - label=ready-to-merge
     actions:
+      delete_head_branch: {}
       merge:
         method: squash
         strict: true
