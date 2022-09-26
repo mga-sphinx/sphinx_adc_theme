@@ -7,6 +7,6 @@ verify_ssl = true
 
 [packages]
 setuptools-scm = "==7.0.5"
-Sphinx = "==5.1.1"
+Sphinx = "==5.2.1"
 
 [requires]
